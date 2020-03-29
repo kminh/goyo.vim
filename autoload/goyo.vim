@@ -123,6 +123,7 @@ endfunction
 
 function! s:hide_statusline()
   setlocal statusline=\ 
+  silent! doautocmd User GoyoHideStatusline
 endfunction
 
 function! s:hide_linenr()
